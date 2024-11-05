@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">Research Automation</a>
+            <a href="/dashboard" class="nav-link active">Dashboard</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard-stats">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Projects</h3>
+                    <p id="total-projects">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Completed Projects</h3>
+                    <p id="completed-projects">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Completion Rate</h3>
+                    <p id="completion-rate">0%</p>
+                </div>
+            </div>
+            <div id="monthly-chart"></div>
+        </section>
+
+        <section id="active-projects">
+            <h2>Active Projects</h2>
+            <div class="projects-grid" id="projects-list"></div>
+        </section>
+    </main>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
